@@ -1,19 +1,25 @@
-#Equipment Failure Prediction System
-#Machine Learning + Explainable AI (SHAP)
+# 🚀 Equipment Failure Prediction System
+### Machine Learning + Explainable AI (SHAP)
 
-#一個結合 機器學習預測 + 可解釋 AI（XAI） 的設備健康監測系統
-#適用於 製造業 / IoT / 預測性維護（Predictive Maintenance）
-#🧠 Machine Learning 模型（RandomForest）
+---
 
-#📊 SHAP 解釋模型決策（Explainable AI）
+## 📌 專案介紹
 
-#🛡️ 資料驗證機制（防呆設計）
-#📈 全域 + 單筆預測解釋
-#⚙️ 可直接整合 IoT 感測資料
+本專案建立一個 **設備狀態預測系統（Equipment Health Monitoring System）**，  
+透過機器學習模型預測設備狀態，並使用 SHAP 提供模型可解釋性（Explainable AI, XAI）。
 
+### 🎯 核心價值
 
+- 預測設備異常（Predictive Maintenance）
+- 降低停機風險
+- 提供可解釋決策（Explainable AI）
 
+---
 
+## 🧭 Demo
+
+```python
+predict_equipment_status_ml(110, 160, 18)
 
 
 <img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/7dbe493c-bd23-4530-9738-b83da6fd045c" />
