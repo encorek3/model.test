@@ -48,6 +48,58 @@
 4. **全域與局部模型解釋 (SHAP)**：
    * **Summary Plot (全域解釋)**：針對「正常」、「警告」、「異常」三個類別，分別繪製特徵重要度分佈圖。
    * **Waterfall Plot (局部解釋)**：針對單一筆測試資料，以瀑布圖解析該筆預測結果的加分/扣分因素。
+---
+### 2. SHAP 視覺化圖表
+
+> **⚠️ 重要提示：**
+> 為了在 README 中顯示圖表，你需要先上傳產生的圖片檔，並將下方的佔位符鏈接替換為你實際上傳的鏈接。
+
+執行完畢後，程式會自動使用 Matplotlib 彈出以下分析圖表。這些圖表解釋了各個特徵（溫度、壓力、振動）對模型預測特定類別的影響。
+
+#### 全域解釋：多類別 SHAP Summary Plot
+
+對於多分類問題，SHAP 會對每個類別單獨繪製一張 Summary Plot。以下是本專案中針對三個類別產出的圖表：
+
+**1. 類別: 正常 (Normal)**
+
+![SHAP Summary Plot - 正常 (Normal)](<img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/30a81610-0206-414d-9510-bd14473ffc17" />
+)
+
+* **解讀：** 藍色點（低特徵值）聚集在正向 SHAP 值（大於 0），表示當溫度、壓力和振動數值較低時，模型更傾向於預測設備狀態為「正常」。
+
+**2. 類別: 異常 (Anomaly)**
+
+![SHAP Summary Plot - 異常 (Anomaly)](<img width="753" height="260" alt="output1" src="https://github.com/user-attachments/assets/579fbcbf-8f47-458c-ba92-9e01cbdcea81" />
+)
+
+* **解讀：** 紅色點（高特徵值）聚集在正向 SHAP 值，表示當溫度、壓力和振動數值較高時，模型更傾向於預測設備狀態為「異常」。
+
+**3. 類別: 警告 (Warning)**
+
+![SHAP Summary Plot - 警告 (Warning)](<img width="753" height="260" alt="output2" src="https://github.com/user-attachments/assets/9f64c304-10d6-4025-a360-544da0931cfd" />
+)
+
+* **解讀：** 特徵值的影響呈現分佈。特定區間的特徵值高低會將模型推向預測「警告」狀態。
+
+---
+
+#### 圖表閱讀通用說明：
+* **X 軸 (SHAP 值)：** 表示該特徵對模型輸出機率的影響。大於 0 表示增加預測該類別的機率，小於 0 表示減少機率。
+* **顏色的含義：** 顏色的深淺代表特徵值的數值大小（紅色表示高，藍色表示低）。
+
+---
+
+#### 局部解釋：單筆測試資料 SHAP Waterfall Plot
+
+除了全域解釋，專案還提供對特定單一筆資料的解釋。以下是一個瀑布圖範例，用於解構模型對單一筆預測結果的判斷過程。
+
+![SHAP Waterfall Plot - 單筆解釋](<img width="753" height="260" alt="output3" src="https://github.com/user-attachments/assets/90d5e55c-d8b3-457c-b47b-259ff8b4d9d6" />
+)
+
+* **解讀：** 此圖呈現了各個特徵如何從模型的基準預測機率 (`E[X]`) 開始，進行加分或扣分，最終推移至該筆資料的預測結果。這能幫助開發者理解模型對具體案例的決策邏輯。
+
+
+
 
 ---
 
