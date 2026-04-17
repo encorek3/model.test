@@ -1,26 +1,56 @@
-# 🚀 Equipment Failure Prediction System
-### Machine Learning + Explainable AI (SHAP)
+# 🚀 設備異常預測系統（Equipment Failure Prediction System）
+### Machine Learning × Explainable AI × Predictive Maintenance
 
 ---
 
-## 📌 專案介紹
+## 🧠 專案故事（Project Story）
 
-本專案建立一個 **設備狀態預測系統（Equipment Health Monitoring System）**，  
-透過機器學習模型預測設備狀態，並使用 SHAP 提供模型可解釋性（Explainable AI, XAI）。
+在製造業或工業場景中，設備異常通常會帶來：
 
-### 🎯 核心價值
+- ❌ 停機損失
+- ❌ 維修成本上升
+- ❌ 生產延誤
 
-- 預測設備異常（Predictive Maintenance）
-- 降低停機風險
-- 提供可解釋決策（Explainable AI）
+本專案目標是：
+
+> 👉 **在設備故障發生前預測異常，並解釋原因**
+
+因此不只做「預測」，還加入：
+
+- Explainable AI（SHAP）
+- 資料驗證（Production 思維）
+
+---
+
+## 🎯 專案亮點（Highlights）
+
+- 🔍 三分類預測（正常 / 警告 / 異常）
+- 🧠 RandomForest 機器學習模型
+- 📊 SHAP 可解釋 AI（Explainable AI）
+- 🛡️ 資料驗證層（避免錯誤輸入）
+- ⚙️ 模組化設計（可擴展成系統）
+
+---
+
+## 🖼️ 視覺化展示（Visualization）
+
+### 🔸 SHAP 全域特徵重要度
+
+![SHAP Summary](images/shap_summary.png)
+
+👉 顯示哪些特徵最影響設備異常
+
+---
+
+### 🔸 單筆預測解釋
+
+![SHAP Waterfall](images/shap_waterfall.png)
+
+👉 解釋為什麼這筆資料被判定為「異常」
 
 ---
 
 ## 🧭 Demo
 
-
-
-
-<img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/7dbe493c-bd23-4530-9738-b83da6fd045c" />
-<img width="753" height="260" alt="output1" src="https://github.com/user-attachments/assets/565cc536-dd87-4a40-9311-5fb8b9e70644" />
-<img width="753" height="260" alt="output2" src="https://github.com/user-attachments/assets/13cb5e7f-3a75-46fb-bd11-5f721e94bf11" />
+```python
+predict_equipment_status_ml(110, 160, 18)
