@@ -90,8 +90,7 @@
 
 除了全域解釋，專案還提供對特定單一筆資料的解釋。以下是一個瀑布圖範例，用於解構模型對單一筆預測結果的判斷過程。
 
-![SHAP Waterfall Plot - 單筆解釋](<img width="753" height="260" alt="output3" src="https://github.com/user-attachments/assets/90d5e55c-d8b3-457c-b47b-259ff8b4d9d6" />
-)
+(<img width="753" height="260" alt="output3" src="https://github.com/user-attachments/assets/90d5e55c-d8b3-457c-b47b-259ff8b4d9d6" />)
 
 * **解讀：** 此圖呈現了各個特徵如何從模型的基準預測機率 (`E[X]`) 開始，進行加分或扣分，最終推移至該筆資料的預測結果。這能幫助開發者理解模型對具體案例的決策邏輯。
 
