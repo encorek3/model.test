@@ -18,8 +18,7 @@
 
 ## 🧭 Demo
 
-```python
-predict_equipment_status_ml(110, 160, 18)
+
 
 
 <img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/7dbe493c-bd23-4530-9738-b83da6fd045c" />
