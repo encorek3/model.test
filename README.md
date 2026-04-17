@@ -62,8 +62,7 @@
 
 **1. 類別: 正常 (Normal)**
 
-![SHAP Summary Plot - 正常 (Normal)](<img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/30a81610-0206-414d-9510-bd14473ffc17" />
-)
+(<img width="753" height="260" alt="output" src="https://github.com/user-attachments/assets/30a81610-0206-414d-9510-bd14473ffc17" />)
 
 * **解讀：** 藍色點（低特徵值）聚集在正向 SHAP 值（大於 0），表示當溫度、壓力和振動數值較低時，模型更傾向於預測設備狀態為「正常」。
 
