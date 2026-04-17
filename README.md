@@ -68,15 +68,13 @@
 
 **2. 類別: 異常 (Anomaly)**
 
-![SHAP Summary Plot - 異常 (Anomaly)](<img width="753" height="260" alt="output1" src="https://github.com/user-attachments/assets/579fbcbf-8f47-458c-ba92-9e01cbdcea81" />
-)
+(<img width="753" height="260" alt="output1" src="https://github.com/user-attachments/assets/579fbcbf-8f47-458c-ba92-9e01cbdcea81" />)
 
 * **解讀：** 紅色點（高特徵值）聚集在正向 SHAP 值，表示當溫度、壓力和振動數值較高時，模型更傾向於預測設備狀態為「異常」。
 
 **3. 類別: 警告 (Warning)**
 
-![SHAP Summary Plot - 警告 (Warning)](<img width="753" height="260" alt="output2" src="https://github.com/user-attachments/assets/9f64c304-10d6-4025-a360-544da0931cfd" />
-)
+(<img width="753" height="260" alt="output2" src="https://github.com/user-attachments/assets/9f64c304-10d6-4025-a360-544da0931cfd" />)
 
 * **解讀：** 特徵值的影響呈現分佈。特定區間的特徵值高低會將模型推向預測「警告」狀態。
 
