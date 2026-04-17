@@ -3,11 +3,11 @@
 
 #一個結合 機器學習預測 + 可解釋 AI（XAI） 的設備健康監測系統
 #適用於 製造業 / IoT / 預測性維護（Predictive Maintenance）
-🧠 Machine Learning 模型（RandomForest）
-📊 SHAP 解釋模型決策（Explainable AI）
-🛡️ 資料驗證機制（防呆設計）
-📈 全域 + 單筆預測解釋
-⚙️ 可直接整合 IoT 感測資料
+#🧠 Machine Learning 模型（RandomForest）
+#📊 SHAP 解釋模型決策（Explainable AI）
+#🛡️ 資料驗證機制（防呆設計）
+#📈 全域 + 單筆預測解釋
+#⚙️ 可直接整合 IoT 感測資料
 
 
 
